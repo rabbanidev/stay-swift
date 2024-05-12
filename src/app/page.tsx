@@ -1,3 +1,7 @@
 export default function HomePage() {
-  return <div>HomePage</div>;
+  return (
+    <div>
+      <Image src="" alt="" />
+    </div>
+  );
 }
