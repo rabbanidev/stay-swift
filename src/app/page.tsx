@@ -1,6 +1,6 @@
 import Search from '@/components/search/Search';
 
-export default function HomePage() {
+export default async function HomePage() {
   return (
     <section className="relative grid h-screen max-h-screen place-items-center bg-[#F6F3E9] bg-[url('/hero-bg.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="container items-center pb-12 ">
