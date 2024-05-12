@@ -13,7 +13,7 @@
     "prettier": "prettier --write */**/*.{js,jsx,json,ts,tsx,scss,css,md}",
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint-prettier": "npm run lint:check && npm run prettier:check",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.ts": "npm run lint-prettier"
