@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  nav {
+    @apply absolute left-0 right-0 top-0 z-50 mx-auto flex w-full max-w-7xl justify-between px-4 py-4;
+  }
+
+  nav img {
+    @apply h-[35px] md:h-[40px] lg:h-[50px];
+  }
+  nav ul {
+    @apply hidden items-center gap-6 md:flex;
+  }
+
+  nav ul .login {
+    @apply bg-primary rounded-md px-6 py-3 font-bold text-white;
+  }
+
+  .container {
+    @apply mx-auto w-full max-w-7xl px-4;
+  }
+
+  /* Input */
+  select {
+    @apply w-full rounded-md border border-black/20 bg-transparent px-4 py-2;
+  }
+
+  input[type='date'] {
+    @apply w-full rounded-md border border-black/20 bg-transparent px-4 py-2;
+  }
+
+  .search-btn {
+    @apply bg-primary hover:shadow-primary/50 mx-auto block -translate-y-1/2 rounded-md px-8 py-3 font-bold text-white shadow-lg transition-all active:scale-95;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:shadow-primary/50 block rounded-md px-8 py-2 font-bold text-white shadow-lg transition-all active:scale-95;
+  }
+
+  #searchParams {
+    @apply h-full w-full items-center space-y-5 rounded-xl border border-black/10 bg-white px-6 py-10 shadow-lg lg:flex lg:space-y-0 lg:px-8 lg:py-12 [&>*]:flex-1 [&>*]:px-4 [&>div>span]:mb-3;
+  }
+
+  #searchParams span {
+    @apply font-bold;
+  }
+
+  .imageshowCase {
+    @apply h-[400px];
+  }
+
+  .imageshowCase img {
+    @apply h-full min-h-full w-full min-w-full object-cover;
+  }
+
+  .login-form {
+    @apply my-6 flex flex-col;
+  }
+
+  .login-form div {
+    @apply my-2 flex flex-col gap-2;
+  }
+
+  .login-form input {
+    @apply rounded-md border border-black/20 px-4 py-2;
+  }
+
+  input[type='checkbox'] {
+    @apply mx-1;
+  }
+}
